@@ -1,50 +1,87 @@
-# Academic Project Page Template
-This is an academic paper project page template.
+# CHUG: Crowdsourced User-Generated HDR Video Quality Dataset
+
+![Dataset Banner](images/banner.png)
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Download Dataset](https://img.shields.io/badge/Download-CHUG-blue)](https://utexas.box.com/v/chug-dataset)
+
+## 📌 Overview
+CHUG is the **first large-scale User-Generated HDR (UGC-HDR) video quality dataset**, filling a crucial gap in perceptual quality assessment. It features:
+
+✅ **5,992 videos** sourced from **856 UGC-HDR reference videos**  
+✅ **Crowdsourced HDR videos**, ensuring real-world distortions  
+✅ **Compression artifacts simulated** via a **bitrate ladder**  
+✅ **211,848 subjective ratings** collected via **Amazon Mechanical Turk (AMT)**  
+✅ **Balanced mix of portrait and landscape videos**  
+
+This dataset is a benchmark for **No-Reference (NR) HDR-VQA models** and **HDR quality assessment research**.
+
+---
+
+## 📂 Dataset Structure
+
+    CHUG_Dataset/
+    │── metadata/
+    │   ├── chug_videos.csv  # Metadata file with video details (MOS, SI, TI, bitrate, resolution)
+    │   ├── subjective_scores.csv  # Raw human ratings from AMT study
+    │── videos/
+    │   ├── 1080p_ref/  # Reference HDR videos
+    │   ├── 1080p_3Mbps/
+    │   ├── 720p_2Mbps/
+    │   ├── 360p_0.2Mbps/
+    │── example_videos/  # Sample videos from dataset
+    │── figures/
+    │   ├── si_ti_distribution.png
+    │   ├── mos_vs_resolution.png
+    │   ├── bitrate_vs_mos.png
+    │── README.md
 
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
 
 
+---
 
-## Start using the template
-To start using the template click on `Use this Template`.
+## 🖥️ Sample Videos
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+🔗 [Example 1 (1080p Reference)](example_video_1.mp4)  
+🔗 [Example 2 (720p @ 2Mbps)](example_video_2.mp4)  
+🔗 [Example 3 (360p @ 0.2Mbps)](example_video_3.mp4)  
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+---
 
-## Components
-- Teaser video
-- Images Carousel
-- Youtube embedding
-- Video Carousel
-- PDF Poster
-- Bibtex citation
+## 📊 Key Findings from the Dataset
 
-## Tips:
-- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
-- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
-(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
-- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
-- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
-- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
-- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
-- This project page can also be made into a github pages website.
-- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
-- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://horwitz.ai](https://horwitz.ai)
+- **Higher resolutions & bitrates improve perceptual quality** 📈  
+- **UGC-HDR videos exhibit unique distortions, including banding and overexposure** 🌈  
+- **Landscape vs. Portrait orientation has minimal impact on MOS, though portrait is slightly favored** 📱  
+- **Compression artifacts degrade MOS significantly at low bitrates** ⚠️  
+
+For full analysis, check our **[paper](paper_link_here.pdf)**.
+
+---
+
+## 📝 How to Use the Dataset?
+
+1. **Download the dataset** [here](https://utexas.box.com/v/chug-dataset).
+2. **Extract the dataset** and explore metadata in `chug_videos.csv`.
+4. **Benchmark your NR-HDR-VQA models** using CHUG.
+
+---
+
+## 📜 Citation
+
+If you use CHUG in your research, please cite:
+
+***COMING SOON***
+
+
+## 📜 License
+CHUG is released under a Creative Commons Attribution-NonCommercial (CC BY-NC 4.0) License.
+
+
+## 📬 Contact
+For questions, reach out to:\
+📧 ***NONE***
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
