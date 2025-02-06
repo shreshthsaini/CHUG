@@ -3,7 +3,10 @@
 
 
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/document/YOUR_PAPER_ID) [![arXiv](https://img.shields.io/badge/View%20on-arXiv-red)](https://arxiv.org/abs/YOUR_ARXIV_ID) [![Paper PDF](https://img.shields.io/badge/Download-Paper%20PDF-orange)](https://github.com/YOUR_GITHUB_REPO/raw/main/paper.pdf)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/document/YOUR_PAPER_ID) [![arXiv](https://img.shields.io/badge/View%20on-arXiv-red)](https://arxiv.org/abs/YOUR_ARXIV_ID)\
+[![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper.pdf)
+[![Supplementary](https://img.shields.io/badge/Supplementary-PDF-blue)](supplementary.pdf)
+
 
 
 ## 📌 Overview
@@ -64,7 +67,9 @@ done
 - Landscape vs. Portrait orientation has minimal impact on MOS, though portrait is slightly favored 📱
 - Compression artifacts degrade MOS significantly at low bitrates ⚠️
 
-For a detailed analysis, check our paper and supplementary material.
+### 📄 Paper and Supplementary Material
+
+For a detailed analysis, check our [paper](./static/pdfs/chug.pdf) and [supplementary material](./static/pdfs/chug-supp.pdf).
 
 ---
 ## 🎬 Sample Videos (Direct Playback)
