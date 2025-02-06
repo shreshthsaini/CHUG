@@ -1,6 +1,7 @@
-# CHUG: Crowdsourced User-Generated HDR Video Quality Dataset
+# <img src="images/chug-logo.png" alt="Dataset Banner" width="25"> CHUG: Crowdsourced User-Generated HDR Video Quality Dataset
 
-![Dataset Banner](images/banner.png)
+
+
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/document/YOUR_PAPER_ID) [![arXiv](https://img.shields.io/badge/View%20on-arXiv-red)](https://arxiv.org/abs/YOUR_ARXIV_ID) [![Paper PDF](https://img.shields.io/badge/Download-Paper%20PDF-orange)](https://github.com/YOUR_GITHUB_REPO/raw/main/paper.pdf)
 
