@@ -3,9 +3,8 @@
 
 
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/document/YOUR_PAPER_ID) [![arXiv](https://img.shields.io/badge/View%20on-arXiv-red)](https://arxiv.org/abs/YOUR_ARXIV_ID)\
-[![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper.pdf)
-[![Supplementary](https://img.shields.io/badge/Supplementary-PDF-blue)](supplementary.pdf)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![Paper](https://img.shields.io/badge/Paper-PDF-red)](./static/pdfs/chug.pdf) [![Supplementary](https://img.shields.io/badge/Supplementary-PDF-blue)](./static/pdfs/chug-supp.pdf) \
+[![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/document/YOUR_PAPER_ID) [![arXiv](https://img.shields.io/badge/View%20on-arXiv-red)](https://arxiv.org/abs/YOUR_ARXIV_ID) 
 
 
 
@@ -46,7 +45,9 @@ Museum: [https://ugchdrmturk.s3.us-east-2.amazonaws.com/videos/9ae245a27cc5ea9d2
 ### **2️⃣ Downloading Videos Using AWS CLI**
 To download all videos:
 ```sh
-aws s3 sync s3://ugchdrmturk/videos/ ./CHUG_Dataset/
+cat chug-video.txt | while read video; do
+    aws s3 cp s3://ugchdrmturk/videos/${video}.mp4 ./CHUG_Videos/
+done
 ```
 
 To download a single video:
@@ -54,9 +55,9 @@ To download a single video:
 aws s3 cp s3://ugchdrmturk/videos/VIDEO.mp4 ./CHUG_Dataset/
 ```
 
-To download selected videos from chug-video.txt:
+To download selected videos, create a new text file with list of video IDs:
 ```sh
-cat chug-video.txt | while read video; do
+cat sample-video.txt | while read video; do
     aws s3 cp s3://ugchdrmturk/videos/${video}.mp4 ./CHUG_Videos/
 done
 ```
