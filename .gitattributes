@@ -1,1 +1,3 @@
 static/pdfs/chug.pdf filter=lfs diff=lfs merge=lfs -text
+ filter=lfs diff=lfs merge=lfs -text
+static/pdfs/chug-supp.pdf filter=lfs diff=lfs merge=lfs -text
