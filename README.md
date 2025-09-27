@@ -99,13 +99,16 @@ CHUG is expected to guide industry standards and HDR-VQA research for years to c
 If you use CHUG in your research, please cite us:
 
 ```bibtex
-@inproceedings{saini2025chug,
-  title={CHUG: Crowdsourced User-Generated HDR Video Quality Dataset},
-  author={Saini, Shreshth and Bovik, Alan C and Birkbeck, Neil and Wang, Yilin and Adsumilli, Balu},
+@INPROCEEDINGS{11084488,
+  author={Saini, Shreshth and Bovik, Alan C. and Birkbeck, Neil and Wang, Yilin and Adsumilli, Balu},
   booktitle={2025 IEEE International Conference on Image Processing (ICIP)},
-  pages={2504--2509},
+  title={CHUG: Crowdsourced User-Generated HDR Video Quality Dataset},
   year={2025},
-  organization={IEEE}
+  volume={},
+  number={},
+  pages={2504-2509},
+  keywords={Visualization;Video on demand;User-generated content;Benchmark testing;Distortion;Quality assessment;High dynamic range;Web sites;Surges;Videos;Crowdsourced;High Dynamic Range (HDR);Video Quality Assessment;HDR VQA Dataset;User-Generated Content (UGC)},
+  doi={10.1109/ICIP55913.2025.11084488}
 }
 ```
 
