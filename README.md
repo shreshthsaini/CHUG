@@ -1,8 +1,7 @@
 # <img src="images/chug-logo.png" alt="Dataset Banner" width="25"> CHUG: Crowdsourced User-Generated HDR Video Quality Dataset
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![Paper](https://img.shields.io/badge/Paper-PDF-red)](./static/pdfs/chug.pdf) [![Supplementary](https://img.shields.io/badge/Supplementary-PDF-blue)](./static/pdfs/chug-supp.pdf) \\
-[![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/abstract/document/11084488)
-
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![Paper](https://img.shields.io/badge/Paper-PDF-red)](./static/pdfs/chug.pdf) [![Supplementary](https://img.shields.io/badge/Supplementary-PDF-blue)](./static/pdfs/chug-supp.pdf) 
+[![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/abstract/document/11084488).
 
 ## 📌 Overview
 CHUG is the **first large-scale User-Generated HDR (UGC-HDR) video quality dataset**, designed for perceptual video quality assessment and No-Reference HDR-VQA research.
