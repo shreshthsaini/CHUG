@@ -1,11 +1,7 @@
 # <img src="images/chug-logo.png" alt="Dataset Banner" width="25"> CHUG: Crowdsourced User-Generated HDR Video Quality Dataset
 
-
-
-
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![Paper](https://img.shields.io/badge/Paper-PDF-red)](./static/pdfs/chug.pdf) [![Supplementary](https://img.shields.io/badge/Supplementary-PDF-blue)](./static/pdfs/chug-supp.pdf) \
-[![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/document/YOUR_PAPER_ID) [![arXiv](https://img.shields.io/badge/View%20on-arXiv-red)](https://arxiv.org/abs/YOUR_ARXIV_ID) 
-
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![Paper](https://img.shields.io/badge/Paper-PDF-red)](./static/pdfs/chug.pdf) [![Supplementary](https://img.shields.io/badge/Supplementary-PDF-blue)](./static/pdfs/chug-supp.pdf) \\
+[![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/abstract/document/11084488)
 
 
 ## 📌 Overview
@@ -16,9 +12,22 @@ CHUG is the **first large-scale User-Generated HDR (UGC-HDR) video quality datas
 ✅ **Authentic UGC-HDR distortions**, including compression artifacts  
 ✅ **Bitrate ladder encoding**, simulating real-world streaming scenarios  
 ✅ **211,848 subjective ratings** collected via **Amazon Mechanical Turk (AMT)**  
-✅ **Balanced mix of portrait and landscape videos**  
+✅ **Balanced mix of portrait and landscape videos**
 
 This dataset serves as a benchmark for **No-Reference (NR) UGC HDR-VQA models** and HDR quality assessment research.
+
+---
+
+## 🖼️ Dataset At A Glance
+
+![CHUG dataset overview pipeline](static/images/fig-1.png)
+*End-to-end crowdsourcing and encoding pipeline used to construct CHUG.*
+
+![Distribution of subjective ratings across encoding settings](static/images/data-distri.png)
+*Distribution of Mean Opinion Scores (MOS) across bitrate ladders and content categories.*
+
+![AMT interface screenshot](static/images/amt-interface.png)
+*Custom Amazon Mechanical Turk interface designed for collecting HDR MOS ratings.*
 
 ---
 
@@ -61,6 +70,7 @@ cat sample-video.txt | while read video; do
     aws s3 cp s3://ugchdrmturk/videos/${video}.mp4 ./CHUG_Videos/
 done
 ```
+
 ---
 ## 📊 Key Dataset Insights
 - Higher resolutions & bitrates improve perceptual quality 📈
@@ -69,8 +79,7 @@ done
 - Compression artifacts degrade MOS significantly at low bitrates ⚠️
 
 ### 📄 Paper and Supplementary Material
-
-For a detailed analysis, check our [paper](./static/pdfs/chug.pdf) and [supplementary material](./static/pdfs/chug-supp.pdf).
+For a detailed analysis, check our [paper](./static/pdfs/chug.pdf) and [supplementary material](./static/pdfs/chug-supp.pdf). The accepted ICIP 2025 version is also available on [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11084488).
 
 ---
 ## 🎬 Sample Videos (Direct Playback)
@@ -101,7 +110,6 @@ Below, you can directly play some sample HDR videos from our dataset:
   Your browser does not support the video tag.
 </video>
 
-
 More sample are listed here in table:
 
 | Category       | Video ID                                 | MOS Score | Resolution | Link |
@@ -114,8 +122,6 @@ More sample are listed here in table:
 | Mountains     | `7435fdf9b5cda9a4299a7be5707ff911`     | 53.37     | 1080p      | [▶ Watch Video](https://ugchdrmturk.s3.us-east-2.amazonaws.com/videos/7435fdf9b5cda9a4299a7be5707ff911.mp4) |
 
 Please checkout the full dataset.
-
-
 
 ---
 ## 🏆 Use Cases and Future Impact
@@ -130,16 +136,25 @@ CHUG serves as a crucial benchmark for No-Reference UGC HDR Video Quality Assess
 
 CHUG is expected to guide industry standards and HDR-VQA research for years to come.
 
-
+---
 ## 📜 Citation
-If you use CHUG in your research, please cite:
+If you use CHUG in your research, please cite our ICIP 2025 paper:
 
-**COMING SOON**
+```bibtex
+@inproceedings{saini2025chug,
+  title={CHUG: Crowdsourced User-Generated HDR Video Quality Dataset},
+  author={Saini, Shreshth and Bovik, Alan C and Birkbeck, Neil and Wang, Yilin and Adsumilli, Balu},
+  booktitle={2025 IEEE International Conference on Image Processing (ICIP)},
+  pages={2504--2509},
+  year={2025},
+  organization={IEEE}
+}
+```
 
+---
 ## 📜 License
 CHUG is released under a Creative Commons Attribution-NonCommercial (CC BY-NC 4.0) License.
 
-## 📬 Contact
-For questions, please reach out:
-📧 [Redacted for Blind Review]
+---
 
+*Last updated: 2024*
