@@ -1,7 +1,7 @@
 # <img src="images/chug-logo.png" alt="Dataset Banner" width="25"> CHUG: Crowdsourced User-Generated HDR Video Quality Dataset
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/) [![Paper](https://img.shields.io/badge/Paper-PDF-red)](./static/pdfs/chug.pdf) [![Supplementary](https://img.shields.io/badge/Supplementary-PDF-blue)](./static/pdfs/chug-supp.pdf) 
-[![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/abstract/document/11084488).
+[![IEEE Xplore](https://img.shields.io/badge/View%20on-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/abstract/document/11084488)
 
 ## 📌 Overview
 CHUG is the **first large-scale User-Generated HDR (UGC-HDR) video quality dataset**, designed for perceptual video quality assessment and No-Reference HDR-VQA research.
@@ -20,21 +20,6 @@ This dataset serves as a benchmark for **No-Reference (NR) UGC HDR-VQA models** 
 ## 🖼️ Dataset At A Glance
 
 ![CHUG dataset overview pipeline](static/images/fig-1.png)
-*End-to-end crowdsourcing and encoding pipeline used to construct CHUG.*
-
-![Distribution of subjective ratings across encoding settings](static/images/data-distri.png)
-*Distribution of Mean Opinion Scores (MOS) across bitrate ladders and content categories.*
-
-![AMT interface screenshot](static/images/amt-interface.png)
-*Custom Amazon Mechanical Turk interface designed for collecting HDR MOS ratings.*
-
----
-
-## 📂 Downloading Dataset
-
-Direct download link for dataset: **COMING SOON**
-
-***For manual download, please see below.***
 
 ---
 
@@ -85,32 +70,6 @@ For a detailed analysis, check our [paper](./static/pdfs/chug.pdf) and [suppleme
 
 Below, you can directly play some sample HDR videos from our dataset:
 
-### **Indoor Scene**
-<video width="640" height="360" controls>
-  <source src="https://ugchdrmturk.s3.us-east-2.amazonaws.com/videos/9ae245a27cc5ea9d2f3fae9692250281.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-### **Carousel**
-<video width="640" height="360" controls>
-  <source src="https://ugchdrmturk.s3.us-east-2.amazonaws.com/videos/273a5d8a3b8c2d0eb4d4c8ff5fcfe360.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-### **Rodeo**
-<video width="640" height="360" controls>
-  <source src="https://ugchdrmturk.s3.us-east-2.amazonaws.com/videos/7b7c9033da9fdb1a5762527f19baf54d.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-### **Nature**
-<video width="640" height="360" controls>
-  <source src="https://ugchdrmturk.s3.us-east-2.amazonaws.com/videos/482dc1789b58cd2a353408602e9cd903.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-More sample are listed here in table:
-
 | Category       | Video ID                                 | MOS Score | Resolution | Link |
 |---------------|-----------------------------------------|-----------|------------|------|
 | Indoor Scene  | `9ae245a27cc5ea9d2f3fae9692250281`     | 33.46     | 1080p      | [▶ Watch Video](https://ugchdrmturk.s3.us-east-2.amazonaws.com/videos/9ae245a27cc5ea9d2f3fae9692250281.mp4) |
@@ -137,7 +96,7 @@ CHUG is expected to guide industry standards and HDR-VQA research for years to c
 
 ---
 ## 📜 Citation
-If you use CHUG in your research, please cite our ICIP 2025 paper:
+If you use CHUG in your research, please cite us:
 
 ```bibtex
 @inproceedings{saini2025chug,
